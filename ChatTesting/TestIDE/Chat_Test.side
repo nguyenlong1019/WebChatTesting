@@ -1,0 +1,138 @@
+{
+  "id": "31b1f87c-29ff-4886-b44e-92540cfc7e33",
+  "version": "2.0",
+  "name": "Chat_Test",
+  "url": "http://127.0.0.1:8000/",
+  "tests": [{
+    "id": "2ec17d56-a664-48c5-8846-bf63b0e92e32",
+    "name": "Login_Test",
+    "commands": [{
+      "id": "6d9aef1f-722b-46ba-b3dc-4c37f54801fd",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:8000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5de0fb2a-60ce-42d3-8e19-40eebe201738",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1074x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "724f84af-6511-4f0c-aeee-c5c42ac98e83",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header__menu p",
+      "targets": [
+        ["css=.header__menu p", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a07b336c-452d-4281-94f5-61c57c0a9fd7",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec98a025-02bb-436c-bf42-6c56928e6777",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "username1"
+    }, {
+      "id": "e30b4b18-4ef1-4eac-85a7-737373d99ac4",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d57523f5-594e-4b41-b8ac-5587b17dc78b",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "long@2002"
+    }, {
+      "id": "d1e22121-da95-416f-8f41-8856187bc857",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn--main",
+      "targets": [
+        ["css=.btn--main", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "12558ff2-2542-48ad-8e35-8f68e8408ac3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-button > svg",
+      "targets": [
+        ["css=.dropdown-button > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe235a95-67e6-49b9-b253-ee1102fd1546",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-link:nth-child(2)",
+      "targets": [
+        ["css=.dropdown-link:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(@href, '/logout/')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6eb65d9-805a-4cb0-8bdc-3f9ed3ee1aac",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c90c50c7-fadd-463f-bf11-86cc0abe9712",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2ec17d56-a664-48c5-8846-bf63b0e92e32"]
+  }],
+  "urls": [],
+  "plugins": []
+}
